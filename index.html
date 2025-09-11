@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Escola Maranata</title>
+  <meta name="description" content="Auto Escola Maranata – formação de condutores com qualidade, aulas teóricas e práticas para todas as categorias." />
+  <link rel="preload" as="image" href="logo auto escola.jpg">
+  <link rel="stylesheet" href="autoescola2.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Página inicial Auto Escola Maranata">
+        <img src="logo auto escola.jpg" alt="Logo Auto Escola Maranata" class="brand__logo" />
+        <span class="brand__name">Auto Escola Maranata</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#contato" class="btn btn--small btn--light">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero__content">
+      <h1>Dirigir com segurança começa aqui.</h1>
+      <p>Equipe experiente, veículos modernos e aprovação rápida no Detran. Matrículas abertas para aulas teóricas e práticas.</p>
+      <div class="hero__actions">
+        <a href="#contato" class="btn btn--primary">Quero me matricular</a>
+        <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2 class="section__title">Nossos serviços</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Aulas Teóricas</h3>
+          <p>Material atualizado, simulados e acompanhamento completo até a prova.</p>
+        </article>
+        <article class="card">
+          <h3>Aulas Práticas</h3>
+          <p>Instrutores qualificados e rotas que simulam o exame. Agendamentos flexíveis.</p>
+        </article>
+        <article class="card">
+          <h3>Renovação & Reciclagem</h3>
+          <p>Processos de renovação, mudança/ad. de categoria e curso de reciclagem.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="categorias" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Categorias atendidas</h2>
+      <div class="grid cards cards--tight">
+        <article class="card">
+          <h3>Categoria A</h3>
+          <p>Motocicletas e similares.</p>
+        </article>
+        <article class="card">
+          <h3>Categoria B</h3>
+          <p>Carros de passeio até 3.500kg.</p>
+        </article>
+        <article class="card">
+          <h3>Categoria C</h3>
+          <p>Veículos de carga acima de 3.500kg.</p>
+        </article>
+        <article class="card">
+          <h3>Categoria D</h3>
+          <p>Transporte de passageiros.</p>
+        </article>
+        <article class="card">
+          <h3>Categoria E</h3>
+          <p>Combinações de veículos (carretas).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo" class="section">
+    <div class="container">
+      <h2 class="section__title">Como funciona</h2>
+      <ol class="steps">
+        <li><strong>Matrícula:</strong> faça seu cadastro e escolha a categoria.</li>
+        <li><strong>Exames médicos/psicológicos:</strong> etapa obrigatória.</li>
+        <li><strong>Curso teórico:</strong> aulas + simulados.</li>
+        <li><strong>Prova teórica do Detran:</strong> aprovação para iniciar práticas.</li>
+        <li><strong>Aulas práticas:</strong> até você se sentir confiante.</li>
+        <li><strong>Exame prático:</strong> pegue sua habilitação!</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2>Descontos para pagamento à vista e planos sem juros!</h2>
+      <a href="#contato" class="btn btn--light">Fale com a gente</a>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2 class="section__title">Fale conosco</h2>
+      <div class="grid contact">
+        <form class="form" autocomplete="on">
+          <div class="form__row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="form__row">
+            <label for="telefone">Telefone/WhatsApp</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(xx) xxxxx-xxxx" required>
+          </div>
+          <div class="form__row">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+              <option>Categoria A</option>
+              <option>Categoria B</option>
+              <option>Categoria C</option>
+              <option>Categoria D</option>
+              <option>Categoria E</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+
+        <div class="contact__info">
+          <h3>Unidade Central</h3>
+          <p><strong>Endereço:</strong> Visconde de Maracaju, 369 – Bairro: 18 do Forte – Centro,Aracaju</p>
+          <p><strong>Telefone:</strong> (79) 98815-9891</p>
+          <p><strong>E-mail:</strong> contato@autoescolamaranata.com.br</p>
+          <div class="map-holder" aria-hidden="true">
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.86346093013!2d-37.06905542495636!3d-10.897979789258239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab37fe85bb891%3A0xd7c943e1c95c4083!2sAuto%20Escola%20Maranata!5e0!3m2!1spt-BR!2sbr!4v1757524395971!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Auto Escola Maranata. Todos os direitos reservados.</p>
+      <p class="small">CFC credenciado ao Detran.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
